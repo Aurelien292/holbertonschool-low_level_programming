@@ -1,16 +1,11 @@
 #include <stdio.h>
-
 /*
- * main - Entry point of the program
- *
- *
- * This function prints a specific phrase to the standard output.
- *
- * Return: Always 0 (Success)
- */
+*File: 4-puts.c
+*main - Prints "Programming is like building a multilingual puzzle .
+*Return: Always 0
+*/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
-
