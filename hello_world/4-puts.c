@@ -1,2 +1,2 @@
 #!/bin/bash
-puts "\"Programming is like building a multilingual puzzle"
+-std=gnu89 puts "\"Programming is like building a multilingual puzzle"
