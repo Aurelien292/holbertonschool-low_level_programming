@@ -5,7 +5,7 @@
 /**
  * main - 0
  *
- *Description: This function prints positive,zero,negative to the standard  *output.
+ *Description: prints positive,zero,negative to the standard *out *put.
  *
  * Return: Always 0 (Success)
  */
@@ -24,7 +24,7 @@ else if (n == 0)
 {
 printf("%d is zero\n", n);
 }
-else if
+else
 {
 printf("%d is negative\n", n);
 }
