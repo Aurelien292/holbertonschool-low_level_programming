@@ -1,9 +1,16 @@
 #include <stdio.h>
-/*push*/
+
+/*
+ * main - Entry point of the program
+ *
+ *
+ * This function prints a specific phrase to the standard output.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-/*push*/
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
-/*push*/
+
