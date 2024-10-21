@@ -1,8 +1,10 @@
 #include <stdio.h>
-/*
-*File: 4-puts.c
-*main - Prints "Programming is like building a multilingual puzzle .
-*Return: Always 0
+/**
+*main - 4-puts.c
+*
+*Description: Prints "Programming is like building a multilingual puzzle .
+*
+*Return: Always 0 (success)
 */
 int main(void)
 {
