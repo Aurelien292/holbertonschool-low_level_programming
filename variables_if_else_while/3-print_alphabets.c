@@ -10,11 +10,11 @@
 int main(void)
 {
 char Lettres;
-for (Lettres 'a'; Lettres <= 'z' ; Lettres++)
+for (Lettres = 'a'; Lettres <= 'z' ; Lettres++)
 {
 putchar(Lettres);
 }
-for (Lettres 'A'; Lettres <= 'Z' ; Lettres++)
+for (Lettres = 'A'; Lettres <= 'Z' ; Lettres++)
 {
 putchar(Lettres);
 }
