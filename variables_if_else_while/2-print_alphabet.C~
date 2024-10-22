@@ -1,0 +1,15 @@
+#include <stdio.h>
+/*
+ *main - 3
+ *
+ */
+
+
+int main(void)
+{
+char Lettres;
+for (Lettres = 'a'; Lettres <= 'z' ; Lettres++)
+putchar (Lettres);
+putchar ('\n');
+return 0;
+}
