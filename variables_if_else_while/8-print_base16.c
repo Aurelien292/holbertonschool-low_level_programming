@@ -12,6 +12,6 @@ for (int Num = 0; Num < 16; Num++)
 {
 putchar("%x", Num);
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
