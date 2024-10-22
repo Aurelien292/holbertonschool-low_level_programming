@@ -8,10 +8,15 @@
  */
 int main(void)
 {
-for (int Num = 0; Num < 16; Num++)
+for (int Num = 0; Num < 16; num++)
 {
-putchar("%x", Num);
+if (Num < 10)
+putchar(Num + '0');
 }
-putchar('\n');
+else
+{
+putchar(Num - 10 + 'a');
+}
+putchar('\n')
 return (0);
 }
