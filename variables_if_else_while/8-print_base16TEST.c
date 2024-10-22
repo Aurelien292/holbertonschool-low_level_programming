@@ -8,10 +8,13 @@
  */
 int main(void)
 {
-char hex[] = "0123456789abcdef";
-for (int i = 0; i < 16; i++)
+for (int Num = 0; Num < 10; Num++)
 {
-putchar(hex[i]);
+putchar(Num + '0');
+}
+for (int Num = 10 ; Num < 16; Num++)
+{
+putchar(Num - 10 + 'a');
 }
 putchar('\n');
 return (0);
