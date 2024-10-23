@@ -9,9 +9,7 @@
 int _putchar(char c);
 int main(void)
 {
-_putchar('^');
-_putchar('L');
-_putchar('c');
-_putchar(':');
+_putchar("_putchar\n");
+ 
 return (0);
 }
