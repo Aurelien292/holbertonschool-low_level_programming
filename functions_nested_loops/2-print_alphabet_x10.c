@@ -13,7 +13,7 @@ int line;
 int car;
 for (line = 0; line <= 9; ++line)
 {
-for (car = 'a'; car <= 'z'; ++ch)
+for (car = 'a'; car <= 'z'; ++car)
 _putchar(car);
 _putchar(\n);
 }
