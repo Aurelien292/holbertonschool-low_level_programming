@@ -7,14 +7,15 @@
  */
 
 int print_alphabet_x10(void)
-int main(void)
 {
 int line;
-int car;
+char car;
 for (line = 0; line <= 9; ++line)
 {
 for (car = 'a'; car <= 'z'; ++car)
+{  
 _putchar(car);
-_putchar(\n);
+} 
+_putchar('\n');
 }
 }
