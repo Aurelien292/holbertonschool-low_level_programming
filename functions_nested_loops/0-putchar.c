@@ -12,7 +12,7 @@ int main(void)
 const char *put = "_putchar\n";
  while (*put)
    {
- _putchar(*put);
+ _putchar(*put++);
    }
 /*_putchar("p");
 _putchar("u");
