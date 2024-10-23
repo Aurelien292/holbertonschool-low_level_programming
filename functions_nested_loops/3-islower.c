@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * _islower - vérifie si un caractère est une minuscule
@@ -8,9 +8,13 @@
  */
 
 int _islower(int Min);
+{
 if (Min >= 97 && Min <= 122)
 {
 return (1);
+}
 else
+{
 return (0);
+}
 }
