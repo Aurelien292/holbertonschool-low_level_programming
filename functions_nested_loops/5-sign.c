@@ -11,11 +11,10 @@
 #include "main.h"
 
 int print_sign(int pos)
-
 {
 if (pos > 0)
 {
-_putchar'+');
+_putchar('+');
 return (1);
 }
 else if (pos == 0)
