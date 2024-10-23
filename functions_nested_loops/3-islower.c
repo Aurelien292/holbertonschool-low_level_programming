@@ -7,7 +7,7 @@
  * Return: retourne 1 si c'est une minuscule, autrement retourne 0
  */
 
-int _islower(int Min);
+int _islower(int Min)
 {
 if (Min >= 97 && Min <= 122)
 {
