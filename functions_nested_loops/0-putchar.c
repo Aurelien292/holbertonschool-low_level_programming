@@ -9,9 +9,9 @@
 int _putchar(char c);
 int main(void)
 {
-  char put;
-  put = "_putchar\n";
-_putchar(put);
+  char *put;
+  *put = "_putchar\n";
+_putchar(*put);
 _putchar("p");
 _putchar("u");
 _putchar("t");
