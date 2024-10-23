@@ -11,12 +11,12 @@ int main(void)
 {
 const char *put = "_putchar\n";
 _putchar(*put);
-_putchar("p");
+/*_putchar("p");
 _putchar("u");
 _putchar("t");
 _putchar("c");
 _putchar("h");
 _putchar("a");
 _putchar("r");
-return (0);
+*/return (0);
 }
