@@ -8,7 +8,8 @@
  */
 int main(void)
 {
-for (int Num = 0; Num < 10; Num++)
+int Num;
+for (Num = 0; Num < 10; Num++)
 {
 putchar(Num + '0');
 }
