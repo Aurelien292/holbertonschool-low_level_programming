@@ -11,9 +11,9 @@ int main(void)
 {
 int Num;
 
-for (Num = 0; Num <= 10; Num++)
+for (Num = 0; Num <= 9; Num++)
 {
-if (Num < 10)
+if (Num < 9)
 putchar(Num + '0');
 {
 putchar (',');
