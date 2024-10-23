@@ -10,11 +10,15 @@
 int main(void)
 {
 int Num;
+
+for (Num = 0; Num <= 10; Num++)
 {
-for (Num = 0; Num <= 9; Num++)
+if (Num < 10)
 putchar(Num + '0');
+{
 putchar (',');
 putchar (' ');
+}
 }
 putchar ('\n');
 return (0);
