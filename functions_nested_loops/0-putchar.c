@@ -15,3 +15,4 @@ while (*put)
 _putchar(*put++);
 }
 return (0);
+}
