@@ -12,7 +12,7 @@ for (int Num = 0; Num < 10; Num++)
 {
 putchar(Num + '0');
 }
-for (int Num = 10 ; Num < 16; Num++)
+for (Num = 10; Num < 16; Num++)
 {
 putchar(Num - 10 + 'a');
 }
