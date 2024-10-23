@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *print_alphabet - Entry point
+ *print_alphabet - alphabet
+ *main - point d'entree
  *Return:0
+ *main - point d'entree du programme
  */
 int main(void)
 void print_alphabet(void)
 {
-print_alphabet();
 char c = 'a';
 while (c <= 'z')
 {
