@@ -1,20 +1,20 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- *print_alphabet - alphabet
- *main - point d'entree
- *Return:0
- *main - point d'entree du programme
+ * print_alphabet - Entry point
+ * Return:0
  */
-int main(void)
+
 void print_alphabet(void)
 {
-char c = 'a';
-while (c <= 'z')
-{
-_putchar(c);
-c++;
-}
-_putchar('\n');
-return (0);
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+
+	}
+	_putchar('\n');
+	return (0);
 }
