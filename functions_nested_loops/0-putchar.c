@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <main.h>
+#include <unistd.h>
 /**
  *main - 0 Putchar
  *
@@ -8,6 +10,9 @@
  */
 int main(void)
 {
-printf("_putchar\n");
+_putchar('^');
+_putchar('L');
+_putchar('c');
+_putchar(':');
 return (0);
 }
