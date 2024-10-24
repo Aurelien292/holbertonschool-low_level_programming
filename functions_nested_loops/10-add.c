@@ -6,12 +6,12 @@
  * @a: The first integer
  * @b: The second integer
  *
- * Description: This function takes two integers as input and returns their sum.
+ * Description: takes two integers as input and returns their sum.
  *
  * Return: The sum of a and b
  */
 int main(void)
-int add (int a , int b)
+int add(int a, int b)
 {
-return (a +b);
+return (a + b);
 }
