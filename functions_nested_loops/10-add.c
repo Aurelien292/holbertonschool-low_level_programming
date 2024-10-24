@@ -10,7 +10,6 @@
  *
  * Return: The sum of a and b
  */
-int main(void)
 int add(int a, int b)
 {
 return (a + b);
