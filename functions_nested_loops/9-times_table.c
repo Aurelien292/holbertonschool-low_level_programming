@@ -23,10 +23,11 @@ putchar('0' + (n % 10));
 }
 void tableau(void)
 {
-int i, j;
-for (int i = 0; i < 10; i++)
+int i;
+int j;
+for (i = 0; i < 10; i++)
 {
-for (int j = 0; j < 10; j++)
+for (j = 0; j < 10; j++)
 {
 calcule(i * j);
 if (j < 9)
