@@ -11,6 +11,7 @@
  */
 void times_table(int n)
 {
+int n;
 if (n < 10)
 {
 _putchar('0' + n);
