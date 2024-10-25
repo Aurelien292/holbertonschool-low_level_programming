@@ -23,6 +23,7 @@ putchar('0' + (n % 10));
 }
 void tableau(void)
 {
+int i, j;
 for (int i = 0; i < 10; i++)
 {
 for (int j = 0; j < 10; j++)
