@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * calcule- Ecrit les nombres de (0-99) to stdout
- * tableau- creer un tableau
- * main- fonction pour ecrire le tableau
+ * calcule - Ecrit les nombres de (0-99) to stdout
+ * tableau - creer un tableau
+ * main - fonction pour ecrire le tableau
  * @n: Le nombre a ecrire
  * Description: Si le nombre est plus grand que 10 ,imprime un chiffre
  * sinon deux chiffres
