@@ -40,7 +40,6 @@ _putchar('$');
 _putchar('\n');
 }
 }
-int main(void)
 {
 tableau();
 return (0);
