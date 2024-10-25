@@ -12,12 +12,12 @@ void times_table(int n)
 {
 if (n < 10)
 {
-putchar('0' + n);
+_putchar('0' + n);
 }
 else
 {
-putchar('0' + (n / 10));
-putchar('0' + (n % 10));
+_putchar('0' + (n / 10));
+_putchar('0' + (n % 10));
 }
 }
 void tableau(void)
@@ -31,12 +31,12 @@ for (j = 0; j < 10; j++)
 times_table(i * j);
 if (j < 9)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 }
 }
-putchar('$');
-putchar('\n');
+_putchar('$');
+_putchar('\n');
 }
 }
 int main(void)
