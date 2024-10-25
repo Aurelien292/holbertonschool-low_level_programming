@@ -11,4 +11,6 @@ int print_last_digit(int);
 void jack_bauer(void);
 int add(int, int);
 void times_table(void);
+void times_tables(int n);
+void tableau(void);
 #endif 

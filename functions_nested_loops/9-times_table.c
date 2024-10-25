@@ -1,46 +1,34 @@
-#include <unistd.h>
-#include <stdio.h>
 #include "main.h"
-
 /**
- * calcule - Ecrit les nombres de (0-99) to stdout
- * tableau - creer un tableau
- * main - fonction pour ecrire le tableau
- * @n: Le nombre a ecrire
- * Description: Si le nombre est plus grand que 10 ,imprime un chiffre
- * sinon deux chiffres
- */
-void times_table(int n)
+* times_table - imprime table 9 ,commence par 0
+*/
+void times_table(void)
 {
-if (n < 10)
+int i, j, result;
+for (i = 0; i <= 9; i++)
 {
-_putchar('0' + n);
+for (j = 0; j <= 9; j++)
+{
+result = i * j;
+if (j == 0)
+{
+_putchar('0');
 }
-else
-{
-_putchar('0' + (n / 10));
-_putchar('0' + (n % 10));
-}
-}
-void tableau(void)
-{
-int i; j;
-for (i = 0; i < 10; i++)
-{
-for (j = 0; j < 10; j++)
-{
-times_table(i * j);
-if (j < 9)
+else if (result < 10)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar(result + '0');
+}
+else
+{
+_putchar(',');
+_putchar(' ');
+_putchar((result / 10) + '0');
+_putchar((result % 10) + '0');
 }
 }
-_putchar('$');
 _putchar('\n');
 }
-}
-{
-tableau();
-return (0);
 }
