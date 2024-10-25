@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * calcule - Ecrit les nombres de (0-99) to stdout
