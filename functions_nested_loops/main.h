@@ -13,4 +13,5 @@ int add(int, int);
 void times_table(void);
 void times_tables(int n);
 void tableau(void);
+void print_to_98(int n);
 #endif 
