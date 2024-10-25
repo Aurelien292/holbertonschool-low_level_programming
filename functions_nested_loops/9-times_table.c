@@ -9,9 +9,8 @@
  * Description: Si le nombre est plus grand que 10 ,imprime un chiffre
  * sinon deux chiffres
  */
-void times_table(int n)
+void print_times_table(int n)
 {
-int n;
 if (n < 10)
 {
 _putchar('0' + n);
