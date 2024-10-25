@@ -8,7 +8,7 @@
  * Description: Si le nombre est plus grand que 10 ,imprime un chiffre
  * sinon deux chiffres
  */
-void times_table(int n);
+void times_table(int n)
 {
 if (n < 10)
 {
@@ -20,7 +20,7 @@ putchar('0' + (n / 10));
 putchar('0' + (n % 10));
 }
 }
-void tableau(void);
+void tableau(void)
 {
 int i;
 int j;
@@ -39,7 +39,7 @@ putchar('$');
 putchar('\n');
 }
 }
-int main(void);
+int main(void)
 {
 tableau();
 return (0);
