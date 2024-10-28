@@ -8,7 +8,7 @@
  *              For positive n, it prints a diagonal line of '\' characters,
  *              with each character preceded by an increasing number of spaces.
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 int n;
 if (n <= 0)
