@@ -7,14 +7,13 @@
  */
 void print_line(int n)
 {
-int Nb = 0;
-if (Nb <= 0)
+if (n <= 0)
 {
 putchar('\n');
 }
 else
 {
-for (int i = 0; i < Nb ; i++)
+for (int i = 0; i < n ; i++)
 {
 putchar('_');
 }
