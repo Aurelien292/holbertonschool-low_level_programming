@@ -15,4 +15,5 @@ void times_tables(int n);
 void tableau(void);
 void print_to_98(int n);
 int _isupper(int c);
+int _isdigit(int c);
 #endif 
