@@ -2,7 +2,7 @@
 /**
  * print_line - Prints the numbers caractere
  * followed by a new line
- *
+ * @n: number of times print _
  * Description: Uses _putchar to print each number
  */
 void print_line(int n)
@@ -13,11 +13,10 @@ _putchar('\n');
 }
 else
 {
-for (int i = 0; i < n ; i++)
+for (; n > 0; n--)
 {
 _putchar('_');
 }
 _putchar('\n');
 }
-return (0);
 }
