@@ -1,4 +1,4 @@
-#inculde "main.h"
+#include "main.h"
 
 /**
  * swap_int - Échange les valeurs de deux entiers.
