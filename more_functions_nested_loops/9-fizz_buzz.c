@@ -37,6 +37,7 @@ printf("%d", i);
 putchar(' ');
 }
 }
+return (0);
 }
 
 
