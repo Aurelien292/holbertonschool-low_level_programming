@@ -1,13 +1,17 @@
 #include <stdio.h>
 /**
- * fizz_buzz - Imprime les nombres de 1 à 100 avec des substitutions.
+ * main - Point d'entrée du programme FizzBuzz.
  *
- * Description: Pour chaque nombre de 1 à 100, la fonction imprime:
- * - "FizzBuzz" si le nombre est divisible par 3 et 5.
- * - "Fizz" si le nombre est divisible par 3.
- * - "Buzz" si le nombre est divisible par 5.
- * - Le nombre lui-même s'il n'est divisible ni par 3 ni par 5.
- * Chaque sortie est suivie d'un espace.
+ * Description: Cette fonction imprime les nombres de 1 à 100 avec des
+ * substitutions. Pour chaque nombre:
+ * - "FizzBuzz" est imprimé si le nombre est divisible par 3 et 5.
+ * - "Fizz" est imprimé si le nombre est divisible par 3.
+ * - "Buzz" est imprimé si le nombre est divisible par 5.
+ * - Le nombre lui-même est imprimé s'il n'est divisible ni par 3 ni par 5.
+ * Chaque sortie est suivie d'un espace, sauf après le dernier nombre.
+ *
+ * Return: Toujours 0 pour indiquer que le programme s'est terminé
+ * correctement.
  */
 int main(void)
 {
@@ -34,10 +38,13 @@ putchar(' ');
 else
 {
 printf("%d", i);
+}
+if (i < 100)
+{
 putchar(' ');
 }
 }
-return ();
+return (0);
 }
 
 
