@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * print_rev - Inverse une chaîne de caractères.
@@ -12,8 +13,7 @@ void print_rev(char *s)
 char temp;
 int compteur = 0;
 int i;
-
-if (s == NULL)
+if (s == NULL )
 {
 return;
 }
