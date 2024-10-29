@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * fizz_buzz - Imprime les nombres de 1 à 100 avec des substitutions.
  *
@@ -34,7 +35,7 @@ _putchar(' ');
 else
 {
 printf("%d", i);
-putchar(' ');
+_putchar(' ');
 }
 }
 }
