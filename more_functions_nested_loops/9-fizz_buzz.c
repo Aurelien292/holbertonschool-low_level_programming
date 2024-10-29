@@ -1,5 +1,3 @@
-#include <main.h>
-
 /**
  * fizz_buzz - Imprime les nombres de 1 à 100 avec des substitutions.
  *
