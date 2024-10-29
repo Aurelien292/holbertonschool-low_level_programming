@@ -11,15 +11,17 @@ void print_rev(char *s)
 {
 char temp;
 int compteur = 0;
+int i;
 while (s[compteur] != '\0')
 {
 compteur++;
 }
-for (int i = 0 ; i < compteur / 2; i++)
+for (i = 0 ; i < compteur / 2; i++)
 {
 temp = s[i];
 s[i] = s[compteur - 1 - i];
 s[compteur - 1 - i] = temp;
 }
-printf("%s", s);
+for (i = 0; i < compteur; i++)
+putchar (s[i]);
 }
