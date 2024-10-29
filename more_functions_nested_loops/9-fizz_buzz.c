@@ -20,22 +20,22 @@ for (i = 1 ; i <= 100 ; i++)
 if ((i % a) == 0 && (i % b) == 0)
 {
 printf("FizzBuzz");
-_putchar(' ');
+putchar(' ');
 }
 else if ((i % a) == 0)
 {
 printf("Fizz");
-_putchar(' ');
+putchar(' ');
 }
 else if ((i % b) == 0)
 {
 printf("Buzz");
-_putchar(' ');
+putchar(' ');
 }
 else
 {
 printf("%d", i);
-_putchar(' ');
+putchar(' ');
 }
 }
 }
