@@ -18,7 +18,7 @@ int main(void)
 int i;
 int a = 3;
 int b = 5;
-for (i = 1 ; i <= 100 ; i++)
+for (i = 1; i <= 99; i++)
 {
 if ((i % a) == 0 && (i % b) == 0)
 {
@@ -41,6 +41,11 @@ printf("%d", i);
 putchar(' ');
 }
 }
+if (i == 100)
+{
+printf("Buzz");
+}
+putchar('\n');
 return (0);
 }
 
