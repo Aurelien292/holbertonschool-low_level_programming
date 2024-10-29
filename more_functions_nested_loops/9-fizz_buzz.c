@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * fizz_buzz - Imprime les nombres de 1 à 100 avec des substitutions.
@@ -10,7 +9,7 @@
  * - Le nombre lui-même s'il n'est divisible ni par 3 ni par 5.
  * Chaque sortie est suivie d'un espace.
  */
-void fizz_buzz(void)
+int main(void)
 {
 int i;
 int a = 3;
