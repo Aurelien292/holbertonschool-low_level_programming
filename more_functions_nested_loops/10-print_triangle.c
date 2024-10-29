@@ -8,7 +8,7 @@
  * avec une hauteur spécifiée par le paramètre size. Si size est
  * inférieur ou égal à 0, un saut de ligne est imprimé.
  */
-void print_triangle(int size);
+void print_triangle(int size)
 {
 int i, j;
 if (size <= 0)
