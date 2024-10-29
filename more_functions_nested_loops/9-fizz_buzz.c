@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * fizz_buzz - Imprime les nombres de 1 à 100 avec des substitutions.
  *
@@ -18,17 +19,17 @@ for (i = 1 ; i <= 100 ; i++)
 if ((i % a) == 0 && (i % b) == 0)
 {
 printf("FizzBuzz");
-putchar(' ');
+_putchar(' ');
 }
 else if ((i % a) == 0)
 {
 printf("Fizz");
-putchar(' ');
+_putchar(' ');
 }
 else if ((i % b) == 0)
 {
 printf("Buzz");
-putchar(' ');
+_putchar(' ');
 }
 else
 {
