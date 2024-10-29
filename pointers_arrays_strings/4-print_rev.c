@@ -23,5 +23,5 @@ s[i] = s[compteur - 1 - i];
 s[compteur - 1 - i] = temp;
 }
 for (i = 0; i < compteur; i++)
-putchar (s[i]);
+_putchar (s[i]);
 }
