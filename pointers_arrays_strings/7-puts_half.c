@@ -15,7 +15,7 @@ Long++;
 Debut = Long / 2;
 if (Long % 2 != 0)
 {
-Debut++;
+Debut--;
 }
 for (i = Debut; i < Long; i++)
 {
