@@ -3,7 +3,7 @@
  * puts_half - Affiche la seconde moitié d'une chaîne.
  * @str: Pointeur vers la chaîne de caractères à afficher.
  */
-void puts_half(char *str);
+void puts_half(char *str)
 {
 int Long = 0;
 while (str[Long] != '\0')
