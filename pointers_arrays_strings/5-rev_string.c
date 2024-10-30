@@ -22,7 +22,4 @@ temp = s[i];
 s[i] = s[compteur - 1 - i];
 s[compteur - 1 - i] = temp;
 }
-for (i = 0; i < compteur; i++)
-_putchar (s[i]);
-_putchar('\n');
 }
