@@ -8,7 +8,7 @@
  * imprime chaque deuxième caractère, en commençant par le
  * premier, suivi d'un saut de ligne.
  */
-void puts2(char *str);
+void puts2(char *str)
 {
 for (int i = 0; str[i] != '\0'; i += 2)
 {
