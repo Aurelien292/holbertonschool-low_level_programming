@@ -9,13 +9,14 @@
  */
 void print_rev(char *s)
 {
-int compteur = 0;
-int j;
+int compteur, j, temp;
+compteur = 0;
 while (s[compteur] != '\0')
 {
 compteur++;
 }
-for (j = compteur - 1; j >= 0; j--)
+temp = compteur;
+for (j = temp - 1; j >= 0; j--)
 {
 _putchar(s[j]);
 }
