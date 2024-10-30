@@ -6,12 +6,12 @@
 void puts_half(char *str);
 {
 int Long = 0;
-while(str[Long] != '\0')
+while (str[Long] != '\0')
 {
 Long++;
 }
-int debut = Long / 2 ;
-if (Long != 0)
+int debut = Long / 2;
+if (Long % 2 != 0)
 {
 Debut++;
 }
