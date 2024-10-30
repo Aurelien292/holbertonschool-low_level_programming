@@ -24,5 +24,5 @@ s[compteur - 1 - i] = temp;
 }
 for (i = 0; i < compteur; i++)
 _putchar (s[i]);
-_putchar('\n';
+_putchar('\n');
 }
