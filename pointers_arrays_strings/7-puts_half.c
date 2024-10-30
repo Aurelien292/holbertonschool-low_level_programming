@@ -13,10 +13,6 @@ while (str[Long] != '\0')
 Long++;
 }
 Debut = Long / 2;
-if (Long % 2 != 0)
-{
-Debut--;
-}
 for (i = Debut; i < Long; i++)
 {
 _putchar(str[i]);
