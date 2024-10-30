@@ -21,3 +21,4 @@ for (i = Debut; i < Long; i++)
 {
 _putchar(str[i]);
 }
+}
