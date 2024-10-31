@@ -16,7 +16,7 @@ int _atoi(char *s)
  int stop = 0;
  while (s[i] != '\0')
    {
-     if (s[i] == '-' & stop == 0)
+     if (s[i] == '-' && stop == 0)
        {
 	 sign = -1;
        }
@@ -33,5 +33,3 @@ int _atoi(char *s)
  nb *= sign;
  return (nb);
 }
-
-
