@@ -21,4 +21,5 @@ for (i = Debut; i < Long; i++)
 {
 _putchar(str[i]);
 }
+_putchar('\n');
 }
