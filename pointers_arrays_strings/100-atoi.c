@@ -27,7 +27,7 @@ else if (isdigit(*s))
 {
 nb = s[i];
 nb *= sign;
-nb = nb * 10 + (s[i] - '0') 
+nb = nb * 10 + (s[i] - ('0')) 
 break;
 }
 i++;
