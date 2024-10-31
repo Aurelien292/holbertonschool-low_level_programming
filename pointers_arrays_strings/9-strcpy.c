@@ -16,6 +16,6 @@ while (*src != '\0')
 src++;
 dest++;
 }
-dest == '\0';
+*dest == '\0';
 return (copie);
 }
