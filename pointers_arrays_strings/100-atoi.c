@@ -13,7 +13,7 @@ int _atoi(char *s)
 int sign = 1;
 int nb = 0;
 int i = 0;
- while(*s == ' ')
+while(*s == ' ')
 {
 s++;
 }
@@ -27,11 +27,13 @@ else if (isdigit(*s))
 {
 nb = s[i];
 nb *= sign;
-printf("%d\n", nb);
+nb = nb * 10 + (s[i] - '0') 
 break;
 }
 i++;
 s++;
 }
-return (0);
+return (nb);
 }
+
+
