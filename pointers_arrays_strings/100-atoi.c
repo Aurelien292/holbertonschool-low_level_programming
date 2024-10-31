@@ -10,7 +10,6 @@
 int _atoi(char *s)
 {
 int sign = 1;
-int nb = atoi;
 while (*s)
 {
 if (*s == '-')
@@ -22,7 +21,7 @@ else if (*s == '+')
 }
 else if (isdigit(*s))
 {
-nb = atoi(ptr);
+nb = atoi(s);
 nb *= sign;
 printf("%d\n", nb);
 break;
