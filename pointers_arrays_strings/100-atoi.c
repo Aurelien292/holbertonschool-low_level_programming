@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _atoi - Convertit une chaîne de caractères en entier.
@@ -9,6 +10,7 @@
 int _atoi(char *s)
 {
 int sign = 1;
+int nb = atoi;
 while (*s)
 {
 if (*s == '-')
@@ -20,7 +22,7 @@ else if (*s == '+')
 }
 else if (isdigit(*s))
 {
-int nb = atoi(ptr);
+nb = atoi(ptr);
 nb *= sign;
 printf("%d\n", nb);
 break;
