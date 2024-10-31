@@ -6,7 +6,7 @@
  *
  * Return: L'entier converti, ou 0 si aucun chiffre n'est trouvé.
  */
-int _atoi(char *s);
+int _atoi(char *s)
 {
 int sign = 1;
 while (*s)
