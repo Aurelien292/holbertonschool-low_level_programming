@@ -20,9 +20,9 @@ if (s[i] == '-' && stop == 0)
 {
 sign = -1;
 }
-else if (s[i] >= 48 && s[i] <= 57 && stop == 0)  
+else if (s[i] >= 48 && s[i] <= 57 && stop == 0)
 {
-nb = nb * 10 + (s[i] - '0'); 
+nb = nb * 10 + (s[i] - '0');
 }
 if (nb != 0 && s[i] == ' ')
 {
