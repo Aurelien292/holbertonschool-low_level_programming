@@ -28,8 +28,8 @@ int _atoi(char *s)
        {
 	 sign = 1;
 	 stop = 1;
-     i++;
        }
+     i++;
    }
  nb *= sign;
  return (nb);
