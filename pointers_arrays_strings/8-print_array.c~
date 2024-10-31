@@ -1,0 +1,22 @@
+#include "main.h"
+
+
+
+
+
+
+void print_array(int *a, int n)
+{
+    for (int j = 0; j < n; j++)
+    {
+        // Afficher l'élément actuel
+        printf("%d", a[j]);
+
+        // Ajouter une virgule après chaque élément sauf le dernier
+        if (j < n - 1)
+        {
+            printf(", ");
+        }
+    }
+    printf("\n"); // Nouvelle ligne après l'affichage
+}
