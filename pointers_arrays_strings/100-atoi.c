@@ -12,22 +12,21 @@ int _atoi(char *s)
 {
 int sign = 1;
 int nb = 0;
+int n = 0;
 while (*s)
 {
 if (*s == '-')
 {
 sign *= -1;
 }
-else if (*s == '+')
-{
-}
 else if (isdigit(*s))
 {
-nb = _atoi(s);
+nb = s[i];
 nb *= sign;
 printf("%d\n", nb);
 break;
 }
+i++;
 s++;
 }
 return (0);
