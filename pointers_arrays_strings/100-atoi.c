@@ -24,7 +24,7 @@ int _atoi(char *s)
        {
 	 nb = nb * 10 + (s[i] - '0'); 
        }
-     else if (nb != 0 && (s[i] < 48 && s[i] > 57))
+     if (nb != 0 && (s[i] < 48 && s[i] > 57))
        {
 	 sign = 1;
 	 stop = 1;
