@@ -26,5 +26,9 @@ while (s2[index])
 {
 index++;
 }
+if (s1 == s2)
+{
+return(0);
+}
 return (*s1 - *s2);
 }
