@@ -14,7 +14,7 @@
  * Return: La différence entre les longueurs de s1 et s2.
  */
 
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 int index = 0;
 int Long_s1 = 0;
