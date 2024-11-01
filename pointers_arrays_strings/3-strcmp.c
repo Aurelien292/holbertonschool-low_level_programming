@@ -26,5 +26,5 @@ while (s2[index])
 {
 index++;
 }
-return (Long_s1 - index);
+return (*s1 - *s2);
 }
