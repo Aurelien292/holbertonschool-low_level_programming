@@ -7,7 +7,7 @@
  *
  * Return: Pointeur vers la chaîne modifiée
  */
-char *string_toupper(char *str);
+char *string_toupper(char *str)
 {
 int i = 0;
 while (str[i] != '\0')
