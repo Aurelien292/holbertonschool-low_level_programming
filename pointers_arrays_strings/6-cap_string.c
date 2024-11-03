@@ -13,6 +13,11 @@ int i = 0;
 char Separateur[] = ",;.!?\"(){} \t\n";
 int j;
 int is_separateur;
+if (str[i] >= 'a' && str[i] <= 'z')
+{
+str[i] -= 32;
+}
+i++;
 while (str[i] != '\0')
 {
 is_separateur = 0;
