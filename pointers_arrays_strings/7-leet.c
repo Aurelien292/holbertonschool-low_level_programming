@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - Convertit une chaîne en leet speak (chiffre ou 
+ * leet - Convertit une chaîne en leet speak (chiffre ou
  * caractere speciaux).
  * @s: La chaîne à convertir.
  * Return: Un pointeur vers la chaîne modifiée.
