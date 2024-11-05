@@ -25,5 +25,5 @@ if (s[index] == c)
 return (s + index);
 }
 }
-return (NULL);
+return ('\0');
 }
