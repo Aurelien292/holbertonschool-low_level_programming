@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * _memcpy - Copie une zone de mémoire d'une source vers une destination.
- * @dest: Pointeur vers la zone de mémoire de destination.
- * @src: Pointeur vers la zone de mémoire source à copier.
- * @n: Nombre d'octets à copier.
- * Cette fonction copie n octets de la zone de mémoire pointée par src
- * vers la zone de mémoire pointée par dest. Si dest et src se chevauchent,
- * le comportement de la fonction est indéfini.
- * Retourne: Un pointeur vers la zone de mémoire de destination (dest).
+ * _memcpy - copie n octets de la mémoire de src vers dest.
+ * @dest: Le pointeur vers la zone mémoire de destination.
+ * @src: Le pointeur vers la zone mémoire source.
+ * @n: Le nombre d'octets à copier.
+ *
+ * Description: Cette fonction copie les n premiers octets de la zone mémoire
+ * pointée par src vers la zone mémoire pointée par dest.
+ * Elle renvoie un pointeur vers la zone mémoire de destination (dest).
+ *
+ * Return: Retourne le pointeur vers la zone mémoire de destination (dest).
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -17,4 +19,3 @@ for (index = 0 ; index < n ; index++)
 dest[index] = src[index];
 return (dest);
 }
-  
