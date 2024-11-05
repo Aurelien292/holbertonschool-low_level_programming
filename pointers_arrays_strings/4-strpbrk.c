@@ -11,7 +11,7 @@
  *         l'un des caractères dans accept, ou NULL si aucun caractère
  *         correspondant n'est trouvé.
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 int index;
 while (*s != '\0')
