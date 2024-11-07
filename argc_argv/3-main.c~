@@ -1,0 +1,11 @@
+
+julien@ubuntu:~/argc, argv$ ./mul 2 3
+6
+julien@ubuntu:~/argc, argv$ ./mul 2 -3
+-6
+julien@ubuntu:~/argc, argv$ ./mul 2 0
+0
+julien@ubuntu:~/argc, argv$ ./mul 245 3245342
+795108790
+julien@ubuntu:~/argc, argv$ ./mul
+Error

@@ -1,4 +1,5 @@
-
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Multiplie deux nombres passés en arguments
@@ -22,12 +23,15 @@ int num2;
 int result;
 if (argc != 3)
 {
-printf("Error"),
+printf("Error\n");
 return (1);
 }
+else
+{
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
 result = num1 *num2;
-printf("%d", result);
+printf("%d\n", result);
+}
 return (0);
 }
