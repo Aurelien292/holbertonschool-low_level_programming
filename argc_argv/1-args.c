@@ -12,7 +12,7 @@
  *
  * Return: Retourne toujours 0 pour indiquer un succès.
  */
-int main(int __attribute__((unused))argc, char *argv[])
+int main(int argc, char *argv[])
 {
 printf("%d\n", argc - 1);
 return (0);
