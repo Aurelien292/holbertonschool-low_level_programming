@@ -14,6 +14,6 @@
  */
 int main(int __attribute__((unused))argc, char *argv[])
 {
-printf("%d\n", argc);
+printf("%d\n", argv);
 return (0);
 }
