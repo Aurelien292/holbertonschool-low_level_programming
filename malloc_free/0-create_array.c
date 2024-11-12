@@ -17,7 +17,7 @@ char *tableau;
 unsigned int i;
 if (size == 0)
 return (NULL);
-tableau = (char *) malloc(size);
+tableau = malloc(sizeof(char) * size;
 if (tableau == NULL)
 return (NULL);
 for (i = 0; i < size; i++)
