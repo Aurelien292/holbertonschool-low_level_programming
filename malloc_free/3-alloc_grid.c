@@ -1,0 +1,47 @@
+#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * alloc_grid - Alloue un tableau 2D de taille `width` x `height`
+ * et l'initialise à 0.
+ * @width: Le nombre de colonnes du tableau.
+ * @height: Le nombre de lignes du tableau.
+ * Description:
+ * Cette fonction alloue dynamiquement un tableau 2D de type
+ * `int` de dimensions `height` x `width`.
+ * Si l'allocation échoue à tout moment, la fonction retourne NULL.
+ * Si l'une des dimensions est égale à 0, la fonction retourne
+ * également NULL.
+ * La mémoire allouée n'est pas initialisée, chaque élément du
+ * tableau contient des valeurs indéterminées.
+ * Il est donc conseillé d'initialiser les éléments du tableau
+ * après l'allocation.
+ * Return:
+ * - Un pointeur vers le tableau 2D alloué, ou NULL en cas d'échec
+ * d'allocation.
+ */
+
+int **alloc_grid(int width, int height)
+{
+int **tableau;
+int i;
+if (width == 0 || height == 0)
+{
+return (NULL);
+}
+tableau = (int **) malloc(height * sizeof(int *));
+if (tableau == 0)
+{
+return (NULL);
+}
+for (i = 0 ; i < height; i++)
+{
+tableau[i] = malloc(width * sizeof(int));
+}
+if (tableau != NULL)
+{
+return (tableau);
+}
+return (NULL);
+}
