@@ -18,8 +18,9 @@
  *         valide.
  *
  * Return: Un pointeur vers la structure `dog_t` nouvellement
-           allouée et
- *         initialisée. Retourne NULL en cas d'échec de l'allocation mémoire 
+ *         allouée et
+ *         initialisée. Retourne NULL en cas d'échec de
+ *         l'allocation mémoire
  *         pour la structure ou l'un de ses champs.
  */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -34,7 +35,7 @@ while (owner[olen++])
 doggy = malloc(sizeof(dog_t));
 if (doggy == NULL)
 return (NULL);
-doggy->name = malloc(nlen * sizeof(doggy->name));
+doggy->name = malloc(nlen *sizeof(doggy->name));
 if (doggy == NULL)
 return (NULL);
 for (i = 0; i < nlen; i++)
