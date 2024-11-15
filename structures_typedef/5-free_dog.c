@@ -6,7 +6,7 @@
  * free_dog - Libère la mémoire allouée pour un chien.
  * @d: Le pointeur vers la structure `dog_t` à libérer.
  *
- * Cette fonction libère d'abord la mémoire allouée pour les champs `name` 
+ * Cette fonction libère d'abord la mémoire allouée pour les champs `name`
  * et `owner`, puis elle libère la structure elle-même.
  */
 void free_dog(dog_t *d)
