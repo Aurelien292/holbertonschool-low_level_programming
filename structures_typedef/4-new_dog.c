@@ -17,8 +17,21 @@ struct dog *d;
 d = malloc(sizeof(struct dog));
 if (d == NULL)
 return (NULL);
-d->name = name;
+d->name = malloc(strlen(name) + 1);
+if (d->name == NULL)
+{
+free(d);
+return (NULL);
+}
+strcpy(d->name, name);
 d->age = age;
-d->owner = owner;
+d->owner = malloc(strlen(owner) + 1);
+if (d->owner == NULL)
+{
+free(d->name);
+free(d);
+return (NULL);
+}
+strcpy(d->owner, owner);
 return (d);
 }
