@@ -31,7 +31,9 @@ free(doggy->name);
 free(doggy);
 return (NULL);
 }
+if (name != NULL)
 strcpy(doggy->name, name);
+if (age != NULL)
 strcpy(doggy->owner, owner);
 doggy->age = age;
 return (doggy);
