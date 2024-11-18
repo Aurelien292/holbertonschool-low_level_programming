@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include "function_pointers.h"
+
+/**
+ * int_index - Rechercher un indice dans un tableau en utilisant
+ * une fonction de comparaison
+ * @array: Tableau d'entiers dans lequel rechercher
+ * @size: Taille du tableau
+ * @cmp: Fonction de comparaison prenant un entier en argument et
+ * retournant un entier
+ *
+ * Return:
+ *  L'indice du premier élément pour lequel la fonction cmp ne renvoie pas 0.
+ *  Si aucun élément ne correspond ou si la taille est <= 0, retourne -1.
+ *
+ * Description :
+ * Cette fonction parcourt le tableau `array` d'entiers et utilise
+ * la fonction `cmp` pour
+ * comparer chaque élément du tableau avec un critère défini dans `cmp`.
+ * Dès qu'un élément
+ * satisfait la condition de comparaison (c'est-à-dire que `cmp(array[i])`
+ * ne renvoie pas 0),
+ * l'indice de cet élément est retourné. Si aucun élément ne correspond,
+ * la fonction retourne -1.
+ * Si les paramètres sont invalides (tableau `NULL`, taille <= 0, ou
+ * `cmp` est `NULL`),
+ * la fonction retourne -1.
+ */
+int int_index(int *array, int size, int (*cmp)(int))
+{
+int i;
+if (array == NULL || size <= 0 || cmp == NULL)
+{
+return (-1);
+}
+for (i = 0; i < size; i++)
+if (cmp(array[i]))
+{
+return (i);
+}
+return (-1);
+}
