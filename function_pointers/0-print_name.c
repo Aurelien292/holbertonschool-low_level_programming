@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "function_pointers.h"
 /**
  * print_name - Affiche un nom en utilisant un pointeur de fonction
@@ -11,13 +10,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-if (name == NULL)
-{
+if (name == NULL || f == NULL)
 return;
-}
-if (f == NULL)
-{
-return;
-}
-return (f);
+f(name);
 }
