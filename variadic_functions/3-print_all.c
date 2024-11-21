@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <stdarg.h>
-
 /**
  * print_all - Affiche différents types d'arguments séparés par une virgule.
  * @format: Une chaîne de caractères qui contient les types d'arguments.
@@ -26,47 +25,38 @@
  */
 void print_all(const char * const format, ...)
 {
-unsigned int tab = 0;
 va_list args;
-float f;
-char c;
-char *s;
-int i;
+char *str = "";
+int i = 0;
+char *separator = "";
 va_start(args, format);
-while (format && format[tab])
+while (format && format[i])
 {
-if (tab > 0)
-{
-printf(", ");
-}
-switch (format[tab])
+switch (format[i])
 {
 case 'c':
-c = va_arg(args, int);
-printf("%c", c);
+printf("%s%c", separator, va_arg(args, int));
 break;
 case'i':
-i = va_arg(args, int);
-printf("%d", i);
+printf("%s%d", separator, va_arg(args, int));
 break;
 case 'f':
-f = va_arg(args, double);
-printf("%f", f);
+printf("%s%f", separator, va_arg(args, double));
 break;
 case 's':
-s = va_arg(args, char *);
-if (s == NULL)
+printf("%s%s", separator, va_arg(args, char *));
+if (str == NULL)
 {
 printf("(nil)");
 }
-else
-{
-printf("%s", s);
 break;
+default:
+i++;
+continue;
 }
+separator = ", ";
+i++;
 }
-tab++;
-}
-va_end(args);
 printf("\n");
+va_end(args);
 }
