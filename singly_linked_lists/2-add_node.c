@@ -22,7 +22,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-new_node = malloc(sizeof(*list_t));
+new_node = malloc(sizeof(*new_node));
 if (new_node == NULL)
 {
 return (NULL);
