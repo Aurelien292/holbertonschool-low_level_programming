@@ -19,11 +19,11 @@ while (h != NULL)
 {
 if (h->str == NULL)
 {
-printf("[0] (nill) \n");
+printf("[0] (nil) \n");
 }
 else
 {
-printf("[%u]%s \n", h->len, h->str);
+printf("[%lu]%s \n", h->len, h->str);
 }
 count++;
 h = h->next;
