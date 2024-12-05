@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * list_len - Renvoie le nombre d'éléments dans une liste chaînée.
+ * dlistint_len - Renvoie le nombre d'éléments dans une liste chaînée.
  * @h: Pointeur vers la tête de la liste.
  *
  * Description: Cette fonction parcourt la liste chaînée à partir de
