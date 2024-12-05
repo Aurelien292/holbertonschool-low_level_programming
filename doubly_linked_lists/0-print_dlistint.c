@@ -3,12 +3,11 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - Prints all the elements of a list_t list
+ * print_dlistint - Prints all the elements of a list_t list
  * @h: Pointer to the head of the list
  *
- * Description: This function traverses a singly linked list,
+ * Description: This function traverses a double linked list,
  * prints the length and the content of each node.
- * If a node's string is NULL, it prints [0] (nil).
  *
  * Return: The number of nodes in the list
  */
