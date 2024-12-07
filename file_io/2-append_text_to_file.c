@@ -30,13 +30,12 @@ fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
 {
 fd = open(filename, O_CREAT | O_WRONLY | O_APPEND,
-S_IRUSR | S_IWUSR | S_IRGRP
-| S_IWGRP | S_IROTH);
+S_IRUSR | S_IWUSR |
+S_IRGRP | S_IWGRP |
+S_IROTH);
 if (fd == -1)
 return (-1);
-
 }
-
 while (text_content[len])
 len++;
 bytes_written = write(fd, text_content, len);
