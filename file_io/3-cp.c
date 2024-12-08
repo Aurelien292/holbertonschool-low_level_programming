@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <sys/stat.h>
 #include "main.h"
 
 /**
  * open_src_file - Ouvre le fichier source en lecture seule.
  * @src_file: Le fichier source à ouvrir.
  *
- * Retourne le descripteur de fichier source ou termine le programme
+ * Return: le descripteur de fichier source ou termine le programme
  * avec une erreur.
  */
 int open_src_file(const char *src_file)
@@ -28,12 +29,14 @@ return (fd_from);
  *                  et le tronque.
  * @dest_file: Le fichier de destination à ouvrir.
  *
- * Retourne le descripteur de fichier de destination ou termine le
+ * Return: le descripteur de fichier de destination ou termine le
  * programme avec une erreur.
  */
 int open_dest_file(const char *dest_file)
 {
-int fd_to = open(dest_file, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+int fd_to;
+fd_to = open(dest_file, O_CREAT | O_WRONLY | O_APPEND,
+S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (fd_to == -1)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", dest_file);
@@ -103,7 +106,7 @@ if (close(fd_from) == -1 || close(fd_to) == -1)
  * la fonction copy_file pour copier le contenu du fichier source
  * vers le fichier de destination.
  *
- * Retourne 0 si tout se passe bien.
+ * Return: 0 si tout se passe bien.
  */
 int main(int argc, char *argv[])
 {
