@@ -16,5 +16,5 @@ int open_src_file(const char *src_file);
 int open_dest_file(const char *dest_file);
 void close_files(int fd_from, int fd_to);
 void copy_data(int fd_from, int fd_to, char *file_from, char *file_to);
-
+int open_file(const char *filename, int flags);
 #endif
