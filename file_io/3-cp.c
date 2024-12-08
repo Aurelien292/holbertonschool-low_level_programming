@@ -35,7 +35,7 @@ return (fd_from);
 int open_dest_file(const char *dest_file)
 {
 int fd_to;
-fd_to = open(dest_file, O_CREAT | O_WRONLY | O_APPEND,
+fd_to = open(dest_file, O_CREAT | O_WRONLY | O_TRUNC,
 S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (fd_to == -1)
 {
