@@ -46,13 +46,18 @@ return (fd_to);
 }
 
 /**
- * copy_data - Copie les données du fichier source vers le fichier
- * de destination.
+ * copy_data - Copie les données du fichier source vers le
+ * fichier de destination.
  * @fd_from: Le descripteur du fichier source.
  * @fd_to: Le descripteur du fichier de destination.
+ * @file_from: Le nom du fichier source.
+ * @file_to: Le nom du fichier de destination.
  *
- * Lit les données du fichier source et les écrit dans le fichier
- * de destination.
+ * Lit les données du fichier source et les écrit dans le
+ * fichier de destination.
+ * En cas d'erreur de lecture ou d'écriture, affiche un
+ * message d'erreur
+ * approprié avec le nom du fichier concerné et termine le programme.
  */
 void copy_data(int fd_from, int fd_to, char *file_from, char *file_to)
 {
@@ -92,7 +97,7 @@ if (close(fd_from) == -1)
 }
 if (close(fd_to) == -1)
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
-exit (100);
+exit(100);
 }
 
 /**
