@@ -33,8 +33,16 @@ int open_file(const char *filename, int flags)
 int fd;
 mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 if (flags & O_CREAT)
+{
 fd = open(filename, flags, mode);
-
+if (fd != -1)
+{
+if (chmod(filename, mode) == -1)
+{ close(fd);
+	error_exit(99, "Error: Can't set permissions for %s\n", filename);
+			}
+}
+}
 else
 
 fd = open(filename, flags);
