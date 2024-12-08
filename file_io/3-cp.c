@@ -107,14 +107,17 @@ if (close(fd_from) == -1 || close(fd_to) == -1)
  */
 int main(int argc, char *argv[])
 {
+int fd_from;
+int fd_to;
+
 if (argc != 3)
 {
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-	exit(97);
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+exit(97);
 }
 
-int fd_from = open_src_file(argv[1]);
-int fd_to = open_dest_file(argv[2]);
+fd_from = open_src_file(argv[1]);
+fd_to = open_dest_file(argv[2]);
 copy_data(fd_from, fd_to);
 close_files(fd_from, fd_to);
 
