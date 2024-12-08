@@ -32,28 +32,18 @@ int open_file(const char *filename, int flags)
 {
 int fd;
 mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+
 if (flags & O_CREAT)
-{
-fd = open(filename, flags, mode);
-if (fd != -1)
-{
-if (chmod(filename, mode) == -1)
-{ close(fd);
-	error_exit(99, "Error: Can't set permissions for %s\n", filename);
-			}
-}
-}
+	fd = open(filename, flags, mode);
 else
-
-fd = open(filename, flags);
-
+	fd = open(filename, flags);
 
 if (fd == -1)
 {
-if (flags & O_RDONLY)
-	error_exit(98, "Error: Can't read from file %s\n", filename);
-else
-	error_exit(99, "Error: Can't write to %s\n", filename);
+	if (flags & O_RDONLY)
+		error_exit(98, "Error: Can't read from file %s\n", filename);
+	else
+		error_exit(99, "Error: Can't write to %s\n", filename);
 }
 return (fd);
 }
@@ -105,7 +95,6 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 int main(int argc, char *argv[])
 {
 int fd_from, fd_to;
-
 if (argc != 3)
 
 error_exit(97, "Usage: cp file_from file_to\n", "");
